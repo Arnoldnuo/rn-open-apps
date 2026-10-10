@@ -1,0 +1,55 @@
+{
+  "name": "rn-open-apps",
+  "version": "0.1.0",
+  "description": "Launch common third-party apps (AI chat apps, browsers, etc.) from React Native with a verified, field-tested app registry. Works on Android, iOS and HarmonyOS.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "plugin",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc -p tsconfig.typecheck.json",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "keywords": [
+    "react-native",
+    "expo",
+    "deep-link",
+    "launch-app",
+    "ai-apps",
+    "harmonyos",
+    "android",
+    "ios"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arnoldnuo/rn-open-apps.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Arnoldnuo/rn-open-apps/issues"
+  },
+  "homepage": "https://github.com/Arnoldnuo/rn-open-apps#readme",
+  "engines": {
+    "node": ">=18"
+  },
+  "peerDependencies": {
+    "react-native": ">=0.71"
+  },
+  "peerDependenciesMeta": {
+    "react-native": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  }
+}
